@@ -21,6 +21,19 @@ img {
   padding: 0 16px;
 }
 
+.brand {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin: 15px 0;
+}
+
+.title-small {
+  margin-bottom: 10px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
