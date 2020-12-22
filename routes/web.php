@@ -149,7 +149,6 @@ Route::get('/', function () {
         }
         elseif ($card['tipo'] == 'corta') {
           $corte[] = $card;
-
         }
         elseif ($card['tipo'] == 'cortissima') {
           $cortissime[] = $card;
