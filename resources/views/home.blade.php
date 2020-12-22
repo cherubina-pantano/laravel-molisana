@@ -2,6 +2,68 @@
 
 @section('content')
 
-    <h1>Home page extends</h1>
+  <section class="container">
+    <h2>LE LUNGHE</h2>
+    <div class="cards">
+      @foreach ($lunghe as $card)
+        <div class="card">
+          <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+          <h3>{{ $card['titolo'] }}</h3>
+
+        </div>
+      @endforeach
+
+    </div>
+
+  </section>
+
+  <section class="container">
+    <h2>LE CORTE</h2>
+    <div class="cards">
+      @foreach ($corte as $card)
+        <div class="card">
+          <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+          <h3>{{ $card['titolo'] }}</h3>
+
+        </div>
+      @endforeach
+
+    </div>
+
+  </section>
+
+  <section class="container">
+    <h2>LE CORTISSIME</h2>
+    <div class="cards">
+      @foreach ($cortissime as $card)
+        <div class="card">
+          <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+          <h3>{{ $card['titolo'] }}</h3>
+
+        </div>
+      @endforeach
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+    {{-- <section class="container">
+      <div class="cards">
+        @foreach ($cards as $card)
+          <div class="card">
+            <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
+            <h3>{{ $card['titolo'] }}</h3>
+
+          </div>
+        @endforeach
+
+      </div>
+
+    </section> --}}
 
 @endsection

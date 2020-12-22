@@ -1,0 +1,10 @@
+// Product cards
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    flex-basis: 32%;
+    margin-right: 1%;
+  }
+}
