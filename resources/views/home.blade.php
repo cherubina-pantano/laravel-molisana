@@ -10,6 +10,8 @@
             <div class="card">
               <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
               <h3 class="title-small">{{ $card['titolo'] }}</h3>
+
+              <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
             </div>
           @endforeach
       </div>
@@ -24,6 +26,8 @@
           <div class="card">
             <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
             <h3 class="title-small">{{ $card['titolo'] }}</h3>
+            <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
+
           </div>
         @endforeach
       </div>
@@ -38,6 +42,8 @@
           <div class="card">
             <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
             <h3 class="title-small">{{ $card['titolo'] }}</h3>
+            <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
+
           </div>
         @endforeach
       </div>
