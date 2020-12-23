@@ -4,6 +4,16 @@
 
   <section class="product-detail">
     <div class="container">
+      <div class="navigation">
+        @if ($id > 0)
+          <a href="{{ route('product', $id - 1) }}">&lt; PREV</a>
+        @endif
+
+        @if ($id < $length)
+          <a href="{{ route('product', $id + 1) }}"> NEXT &gt;</a>
+        @endif
+
+      </div>
       <div class="hero">
         <h1>{{$product['titolo']}}</h1>
         <img src="{{$product['src-h']}}" alt="{{$product['titolo']}}">

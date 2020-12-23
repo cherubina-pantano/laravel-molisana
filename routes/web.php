@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Home page
 Route::get('/', function () {
   $data = config('site-data');
 
@@ -37,7 +38,10 @@ Route::get('/', function () {
     }
 
   // dd($lunghe, $corte, $cortissime);
-    return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
+    // return view('home', ['lunghe' => $lunghe, 'corte' => $corte, 'cortissime' => $cortissime ]);
+
+    // Sintassi più compatta
+    return view('home', compact('lunghe', 'corte', 'cortissime'));
 })->name('home');
 
 // Page Product Details
@@ -46,7 +50,10 @@ Route::get('/product/{id}', function ($id) {
   $data = config('site-data');
 
   $product = $data[$id];
-  return view('product', ['product' => $product]);
+  $length = count($data) - 1;
+  // return view('product', ['product' => $product]);
+  return view('product', compact('product', 'length', 'id'));
+
 })->name('product');
 
 // Page News
