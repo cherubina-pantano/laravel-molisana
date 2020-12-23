@@ -2,7 +2,20 @@
 
 @section('content')
 
-  @if(! empty($lunghe))
+{{-- Versione compatta ("componente primitiva") --}}
+
+  @include('partials.cards', ['cards' => $lunghe, 'title' => 'LE LUNGHE']);
+  @include('partials.cards', ['cards' => $corte, 'title' => 'LE CORTE']);
+  @include('partials.cards', ['cards' => $cortissime, 'title' => 'LE CORTISSIME']);
+
+
+
+
+
+
+{{-- Versione estesa --}}
+
+{{-- @if(! empty($lunghe))
     <section class="container">
       <h2 class="title">LE LUNGHE</h2>
       <div class="cards">
@@ -48,13 +61,7 @@
         @endforeach
       </div>
     </section>
-  @endif
-
-
-
-
-
-
+  @endif}} --}}
 
     {{-- <section class="container">
       <div class="cards">
