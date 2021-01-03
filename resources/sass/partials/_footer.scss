@@ -1,14 +1,18 @@
+footer.container {
+    background-image: url('../images/footer-montagne-bottom.jpg');
+    background-position:  bottom;
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-color: $white;
+}
+
 .footer-wrapp {
     width: 100%;
     height: auto;
     display:flex;
     justify-content: space-around;   
     padding: 45px 0;
-
-    background-color: $white;
-    //background-image: url('../images/footer-montagne-bottom.jpg');
-    background-position:  bottom;
-    background-size: cover;   
+    margin-bottom: 50px; 
 }
 
 footer ul a {

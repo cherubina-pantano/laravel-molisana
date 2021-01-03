@@ -1,6 +1,10 @@
+
+
 .main-content {
-    //background-image: url('../../images/fondo-pag-speciali.jpg'); 
+    background-image: url('../../images/fondo-pag-speciali.jpg'); 
     background-size: cover; 
-    background-color: red;;  
-   
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: $bg-col; 
+    padding: 50px 0;    
 }

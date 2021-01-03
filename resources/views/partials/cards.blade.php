@@ -1,6 +1,6 @@
 
   @if(! empty($cards))
-  <section class="container">
+  <section class="container small-container">
       <h2 class="title">{{ $title }}</h2>
 
       <div class="cards">
