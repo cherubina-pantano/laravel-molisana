@@ -16,7 +16,18 @@ img {
   height: auto;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  background-color: #fff;
+}
+
+.small-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
@@ -61,6 +72,7 @@ img {
 
 .main-content {
   background-size: cover;
+  background-color: red;
 }
 
 .cards {
@@ -70,4 +82,36 @@ img {
 .cards .card {
   flex-basis: 32%;
   margin-right: 1%;
+}
+
+.footer-wrapp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 45px 0;
+  background-color: #fff;
+  background-position: bottom;
+  background-size: cover;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-col-sx {
+  font-size: 14px;
+}
+.footer-col-sx img {
+  margin-bottom: 12px;
+}
+
+.footer-col-center,
+.footer-col-dx {
+  line-height: 22px;
+}
+.footer-col-center h3,
+.footer-col-dx h3 {
+  text-transform: uppercase;
 }

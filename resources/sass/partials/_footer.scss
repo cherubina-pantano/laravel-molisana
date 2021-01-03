@@ -1,0 +1,32 @@
+.footer-wrapp {
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: space-around;   
+    padding: 45px 0;
+
+    background-color: $white;
+    //background-image: url('../images/footer-montagne-bottom.jpg');
+    background-position:  bottom;
+    background-size: cover;   
+}
+
+footer ul a {
+    text-decoration: none;   
+    color: $black 
+}
+
+.footer-col-sx {
+    font-size: 14px;
+    & img {
+        margin-bottom: 12px;;
+    }    
+}
+
+.footer-col-center,
+.footer-col-dx {
+    line-height: 22px;
+    & h3 {
+        text-transform: uppercase;
+    }
+}
