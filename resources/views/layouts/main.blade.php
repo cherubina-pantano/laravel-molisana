@@ -13,7 +13,8 @@
 
       @include('partials.header')
 
-      <main>
+      <main class="main-content">
+          <img src="{{ asset('images/fondo-pag-speciali.jpg') }}" alt="">
           @yield('content')
       </main>
 

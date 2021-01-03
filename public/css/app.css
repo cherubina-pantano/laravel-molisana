@@ -22,17 +22,45 @@ img {
   padding: 0 16px;
 }
 
-.brand {
-  display: flex;
-  justify-content: center;
-}
-
 .title {
   margin: 15px 0;
 }
 
 .title-small {
   margin-bottom: 10px;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar a {
+  text-decoration: none;
+  padding: 0 15px;
+  font-weight: bold;
+  color: #000;
+  background: transparent;
+  transition: background 0.4s;
+}
+.navbar a:hover {
+  background: #b6dbe4;
+  padding-bottom: 10px;
+}
+.navbar a:focus {
+  background: #b6dbe4;
+  padding-bottom: 10px;
+}
+
+.main-content {
+  background-size: cover;
 }
 
 .cards {
